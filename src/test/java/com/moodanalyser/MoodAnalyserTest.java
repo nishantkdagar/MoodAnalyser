@@ -10,11 +10,11 @@ public class MoodAnalyserTest {
         String result = obj.analyzeMood();
         Assertions.assertEquals("SAD",result);
     }
-    /*@Test
+    @Test
     public void givenMessage_WhenProper_ShouldReturnHappy(){
-        MoodAnalyser obj = new MoodAnalyser();
-        String result = obj.analyzeMood("I am in OK Mood");
+        MoodAnalyser obj = new MoodAnalyser("My Mood Doesn't Matter");
+        String result = obj.analyzeMood();
         Assertions.assertEquals("HAPPY",result);
-    }*/
+    }
 
 }

@@ -8,9 +8,9 @@ public class MoodAnalyser {
     public String analyzeMood() {
         if (message.toLowerCase().contains("sad")) {
             return "SAD";
-        } /*else if (!message.toLowerCase().contains("sad")){
+        } else if (!message.toLowerCase().contains("sad")){
             return "HAPPY";
-        }*/ else
+        } else
             return null;
     }
 }
