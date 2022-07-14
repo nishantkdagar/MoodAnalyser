@@ -16,5 +16,11 @@ public class MoodAnalyserTest {
         String result = obj.analyzeMood();
         Assertions.assertEquals("HAPPY",result);
     }
+    @Test
+    public void givenMessage_WhenNull_ShouldReturnHappy(){
+        MoodAnalyser obj = new MoodAnalyser(null);
+        String result = obj.analyzeMood();
+        Assertions.assertEquals("HAPPY",result);
+    }
 
 }
