@@ -12,7 +12,7 @@ public class MoodAnalyserTest {
     }
     @Test
     public void givenMessage_WhenProper_ShouldReturnHappy(){
-        MoodAnalyser obj = new MoodAnalyser("My Mood Doesn't Matter");
+        MoodAnalyser obj = new MoodAnalyser("My Mood is blank");
         String result = obj.analyzeMood();
         Assertions.assertEquals("HAPPY",result);
     }
